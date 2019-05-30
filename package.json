@@ -1,11 +1,10 @@
 {
-  "name": "@hachimiam/create-project",
+  "name": "create-web-project",
   "version": "1.0.0",
-  "description": "a CLI to bootstrap my project",
+  "description": "a CLI to bootstrap my  frontend project",
   "main": "src/index.js",
   "bin": {
-    "@hachimiam/create-project": "bin/create-project",
-    "create-project": "bin/create-project"
+    "create-web-project": "bin/create-web-project"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,18 +14,27 @@
   },
   "keywords": [
     "cli",
-    "create-project"
+    "create-web-project"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Hachimi Ahmed Amine <hachimiaminne@gmail.com> (https://github.com/HACHIMIam)",
+  "license": "MIT",
   "dependencies": {
-    "arg": "^4.1.0",
-    "chalk": "^2.4.2",
-    "esm": "^3.2.25",
-    "execa": "^1.0.0",
-    "inquirer": "^6.3.1",
-    "listr": "^0.14.3",
-    "ncp": "^2.0.0",
-    "pkg-install": "^1.0.0"
-  }
+    "arg": "4.1.0",
+    "chalk": "2.4.2",
+    "esm": "3.2.25",
+    "execa": "1.0.0",
+    "inquirer": "6.3.1",
+    "listr": "0.14.3",
+    "ncp": "2.0.0",
+    "pkg-install": "1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HACHIMIam/create-web-project-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HACHIMIam/create-web-project-cli/issues"
+  },
+  "homepage": "https://github.com/HACHIMIam/create-web-project-cli#readme"
 }
