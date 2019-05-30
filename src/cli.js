@@ -6,6 +6,7 @@ function parseArgumentsIntoOptions(rawArgs) {
     {
       "--git": Boolean,
       "--yes": Boolean,
+      "--install": Boolean,
       "-g": "--git",
       "-y": "--yes",
       "-i": "--install"
@@ -35,8 +36,16 @@ async function promptForMissingOptions(options) {
       type: "list",
       name: "template",
       message: "Please choose which project template to use",
-      choices: ["React", "Vue"],
+      choices: ["React", "Vue", "Angular"],
       default: defaultTemplate
+    });
+  }
+  if (!options.runInstall) {
+    questions.push({
+      type: "confirm",
+      name: "runInstall",
+      message: "Do you want to install Dependencies ?",
+      default: false
     });
   }
   if (!options.git) {
@@ -51,7 +60,8 @@ async function promptForMissingOptions(options) {
   return {
     ...options,
     template: options.template || answers.template,
-    git: options.git || answers.git
+    git: options.git || answers.git,
+    runInstall: options.git || answers.git
   };
 }
 export async function cli(args) {
