@@ -61,7 +61,7 @@ async function promptForMissingOptions(options) {
     ...options,
     template: options.template || answers.template,
     git: options.git || answers.git,
-    runInstall: options.git || answers.git
+    runInstall: options.runInstall || answers.runInstall
   };
 }
 export async function cli(args) {
