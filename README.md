@@ -12,5 +12,6 @@ or yarn
 
 `yarn global add create-web-project`
 
-and then you run `create-web-project` and you are up
-to go
+and then create a new directory and run the cli command
+
+`mkdir demo && cd demo && create-web-project`
