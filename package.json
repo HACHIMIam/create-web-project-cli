@@ -1,6 +1,6 @@
 {
   "name": "create-web-project",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a CLI to bootstrap my  frontend project",
   "main": "src/index.js",
   "bin": {
