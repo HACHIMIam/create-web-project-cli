@@ -56,7 +56,7 @@ export async function createProject(options) {
       title: "Install dependencies",
       task: () =>
         projectInstall({
-          cwd: process.cwd()
+          cwd: options.targetDirectory
         }),
       skip: () =>
         !options.runInstall
