@@ -40,19 +40,20 @@ async function promptForMissingOptions(options) {
       default: defaultTemplate
     });
   }
-  if (!options.runInstall) {
-    questions.push({
-      type: "confirm",
-      name: "runInstall",
-      message: "Do you want to install Dependencies ?",
-      default: false
-    });
-  }
+
   if (!options.git) {
     questions.push({
       type: "confirm",
       name: "git",
       message: "Initialize a git repositpry",
+      default: false
+    });
+  }
+  if (!options.runInstall) {
+    questions.push({
+      type: "confirm",
+      name: "runInstall",
+      message: "Do you want to install Dependencies ?",
       default: false
     });
   }
